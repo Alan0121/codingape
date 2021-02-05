@@ -12,9 +12,9 @@ mc=Minecraft.create()
 count=0
 flower=38
 
-while count<100000:
-   x,y,z=mc.player.getTilePos()
+while count<50:
+    x,y,z=mc.player.getTilePos()
     color=random.randint(0,9)
     mc.setBlock(x,y,z,flower,color)
-    time.sleep(0.2)
+    time.sleep(0.1)
     count=count+1
